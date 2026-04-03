@@ -117,57 +117,32 @@ template <typename SaltinioKonteineris, typename RezultatoKonteineris>
 void kopijuotiStudentus(SaltinioKonteineris& studentai, RezultatoKonteineris& pazangusStudentai, RezultatoKonteineris& silpniStudentai) {
     pazangusStudentai.clear();
     silpniStudentai.clear();
-    if constexpr (requires { pazangusStudentai.reserve(studentai.size()); }) pazangusStudentai.reserve(studentai.size());
-    if constexpr (requires { silpniStudentai.reserve(studentai.size()); }) silpniStudentai.reserve(studentai.size());
+    if constexpr (requires { pazangusStudentai.reserve(studentai.size() / 2); }) pazangusStudentai.reserve(studentai.size() / 2);
+    if constexpr (requires { silpniStudentai.reserve(studentai.size() / 2); }) silpniStudentai.reserve(studentai.size() / 2);
     for (auto& studentas : studentai) {
         if (studentas.galutinisRezultatas < 5) silpniStudentai.push_back(studentas);
         else pazangusStudentai.push_back(studentas);
     }
 }
 
-template <typename T>
-struct is_std_list : std::false_type {};
-
-template <typename T, typename Alloc>
-struct is_std_list<std::list<T, Alloc>> : std::true_type {};
-
 template <typename SaltinioKonteineris, typename RezultatoKonteineris>
-void skirstytiIstrinantStudentus(SaltinioKonteineris& studentai, RezultatoKonteineris& silpniStudentai)
-{
+void skirstytiIstrinantStudentus(SaltinioKonteineris& studentai, RezultatoKonteineris& silpniStudentai){
     silpniStudentai.clear();
-    if constexpr (requires { silpniStudentai.reserve(studentai.size()); }) silpniStudentai.reserve(studentai.size());
-    if constexpr (is_std_list<SaltinioKonteineris>::value && is_std_list<RezultatoKonteineris>::value){
-        auto it = studentai.begin();
-        while (it != studentai.end()) {
-            if (it->galutinisRezultatas < 5) {
-                auto current = it++;
-                silpniStudentai.splice(silpniStudentai.end(), studentai, current);
-            } else {
-                ++it;
-            }
-        }
+    if constexpr (requires { silpniStudentai.reserve(studentai.size() / 2); }) {
+        silpniStudentai.reserve(studentai.size() / 2);
     }
-    else{
-        auto middle = std::stable_partition(studentai.begin(), studentai.end(), [](const auto& s){ return s.galutinisRezultatas >= 5; });
-        std::move(middle, studentai.end(), std::back_inserter(silpniStudentai));
-        studentai.erase(middle, studentai.end());
-    }
+    auto it = std::partition_point(studentai.begin(), studentai.end(), [](const auto& studentas) { return studentas.galutinisRezultatas < 5;});
+    silpniStudentai.insert(silpniStudentai.end(), std::make_move_iterator(studentai.begin()), std::make_move_iterator(it));
+    studentai.erase(studentai.begin(), it);
 }
 
 template <typename SaltinioKonteineris, typename RezultatoKonteineris>
-void skirstytiIstrinantStudentusEfektyviau(SaltinioKonteineris& studentai, RezultatoKonteineris& silpniStudentai)
-{
+void skirstytiIstrinantStudentusEfektyviau(SaltinioKonteineris& studentai,RezultatoKonteineris& silpniStudentai){
     silpniStudentai.clear();
-    if constexpr (is_std_list<SaltinioKonteineris>::value && is_std_list<RezultatoKonteineris>::value) {
-        auto boundary = std::find_if(studentai.begin(), studentai.end(), [](const auto& s) { return s.galutinisRezultatas >= 5; });
-        silpniStudentai.splice(silpniStudentai.end(), studentai, studentai.begin(), boundary);
-    }
-    else {
-        auto boundary = std::find_if(studentai.begin(), studentai.end(), [](const auto& s) {return s.galutinisRezultatas >= 5;});
-        if constexpr (requires { silpniStudentai.reserve(studentai.size()); }) { silpniStudentai.reserve(static_cast<typename RezultatoKonteineris::size_type>(std::distance(studentai.begin(), boundary)));}
-        std::copy(std::make_move_iterator(studentai.begin()), std::make_move_iterator(boundary), std::back_inserter(silpniStudentai));
-        studentai.erase(studentai.begin(), boundary);
-    }
+    if constexpr (requires { silpniStudentai.reserve(studentai.size() / 2); }) silpniStudentai.reserve(studentai.size() / 2);
+    auto it = std::remove_if(studentai.begin(), studentai.end(), [](const auto& studentas) { return studentas.galutinisRezultatas < 5;});
+    std::move(it, studentai.end(), std::back_inserter(silpniStudentai));
+    studentai.erase(it, studentai.end());
 }
 
 template <typename StudentuKonteineris>
