@@ -49,6 +49,9 @@ Naudojant `operator<<`, įmanomi du išvedimo būdai: tik su visais išvestais p
     failoSrautas << studentas;
     failoSrautas << StudentasLentelei{studentas};
 
+## Studento klasės metodų testavimo nuotraukos:
+<img width="686" height="525" alt="image" src="https://github.com/user-attachments/assets/7b77ac56-2c40-420c-8346-adfb9b08a9a3" />
+
 <h2>Naudojimosi instrukcija</h2>
 <ol>
     <li>Parsisiųsti ir įsirašyti <a href="https://gnuwin32.sourceforge.net/packages/make.htm">make</a> programinį paketą (tik jei naudojate Windows OS).</li>
