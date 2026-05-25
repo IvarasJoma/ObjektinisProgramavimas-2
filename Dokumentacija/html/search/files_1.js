@@ -9,5 +9,6 @@ var searchData=
   ['strukturarikiavimas_2eh_6',['strukturaRikiavimas.h',['../struktura_rikiavimas_8h.html',1,'']]],
   ['strukturaskaiciavimai_2eh_7',['strukturaSkaiciavimai.h',['../struktura_skaiciavimai_8h.html',1,'']]],
   ['strukturatestavimas_2eh_8',['strukturaTestavimas.h',['../struktura_testavimas_8h.html',1,'']]],
-  ['strukturavisi_2eh_9',['strukturaVisi.h',['../struktura_visi_8h.html',1,'']]]
+  ['strukturavisi_2eh_9',['strukturaVisi.h',['../struktura_visi_8h.html',1,'']]],
+  ['studentas_2eh_10',['Studentas.h',['../_studentas_8h.html',1,'']]]
 ];

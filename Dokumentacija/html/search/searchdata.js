@@ -1,11 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "afgilmnprstv",
-  1: "ft",
-  2: "fs",
-  3: "agilnprstv",
-  4: "inprs",
-  5: "m"
+  0: "acfgilmnoprstvz~",
+  1: "fstz",
+  2: "fsz",
+  3: "acgilnoprstvz~",
+  4: "ainprs",
+  5: "m",
+  6: "o"
 };
 
 var indexSectionNames =
@@ -15,7 +16,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "typedefs"
+  5: "typedefs",
+  6: "related"
 };
 
 var indexSectionLabels =
@@ -25,6 +27,7 @@ var indexSectionLabels =
   2: "Failai",
   3: "Funkcijos",
   4: "Kintamieji",
-  5: "Tipų apibrėžimai"
+  5: "Tipų apibrėžimai",
+  6: "Draugai"
 };
 

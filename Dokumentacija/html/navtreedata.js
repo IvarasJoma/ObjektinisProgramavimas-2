@@ -28,9 +28,12 @@ var NAVTREE =
     [ "Klasės", "annotated.html", [
       [ "Klasės", "annotated.html", "annotated_dup" ],
       [ "Klasės Indeksas", "classes.html", null ],
+      [ "Klasių hierarchija", "hierarchy.html", "hierarchy" ],
       [ "Klasių Nariai", "functions.html", [
         [ "Visi", "functions.html", null ],
-        [ "Kintamieji", "functions_vars.html", null ]
+        [ "Funkcijos", "functions_func.html", null ],
+        [ "Kintamieji", "functions_vars.html", null ],
+        [ "Susiję Funkcijos", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Failai", "files.html", [

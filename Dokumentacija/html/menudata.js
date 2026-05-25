@@ -27,9 +27,22 @@ var menudata={children:[
 {text:"Klasės",url:"annotated.html",children:[
 {text:"Klasės",url:"annotated.html"},
 {text:"Klasės Indeksas",url:"classes.html"},
+{text:"Klasių hierarchija",url:"hierarchy.html"},
 {text:"Klasių Nariai",url:"functions.html",children:[
-{text:"Visi",url:"functions.html"},
-{text:"Kintamieji",url:"functions_vars.html"}]}]},
+{text:"Visi",url:"functions.html",children:[
+{text:"a",url:"functions.html#index_a"},
+{text:"c",url:"functions.html#index_c"},
+{text:"g",url:"functions.html#index_g"},
+{text:"i",url:"functions.html#index_i"},
+{text:"n",url:"functions.html#index_n"},
+{text:"o",url:"functions.html#index_o"},
+{text:"r",url:"functions.html#index_r"},
+{text:"s",url:"functions.html#index_s"},
+{text:"z",url:"functions.html#index_z"},
+{text:"~",url:"functions.html#index__7E"}]},
+{text:"Funkcijos",url:"functions_func.html"},
+{text:"Kintamieji",url:"functions_vars.html"},
+{text:"Susiję Funkcijos",url:"functions_rela.html"}]}]},
 {text:"Failai",url:"files.html",children:[
 {text:"Failai",url:"files.html"},
 {text:"Failų Nariai",url:"globals.html",children:[
@@ -40,6 +53,7 @@ var menudata={children:[
 {text:"l",url:"globals.html#index_l"},
 {text:"m",url:"globals.html#index_m"},
 {text:"n",url:"globals.html#index_n"},
+{text:"o",url:"globals.html#index_o"},
 {text:"p",url:"globals.html#index_p"},
 {text:"r",url:"globals.html#index_r"},
 {text:"s",url:"globals.html#index_s"},
@@ -51,6 +65,7 @@ var menudata={children:[
 {text:"i",url:"globals_func.html#index_i"},
 {text:"l",url:"globals_func.html#index_l"},
 {text:"n",url:"globals_func.html#index_n"},
+{text:"o",url:"globals_func.html#index_o"},
 {text:"p",url:"globals_func.html#index_p"},
 {text:"r",url:"globals_func.html#index_r"},
 {text:"s",url:"globals_func.html#index_s"},

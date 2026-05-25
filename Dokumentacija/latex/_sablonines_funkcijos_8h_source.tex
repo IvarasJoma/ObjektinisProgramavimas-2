@@ -41,7 +41,7 @@
 \DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ eilute[1024];}
 \DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (std::fgets(eilute,\ \textcolor{keyword}{sizeof}(eilute),\ skaitomasFailas))\ \{}
 \DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}\ \{}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Studentas\ studentas(eilute,\ namuDarbuKiekis);}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_studentas}{Studentas}}\ studentas(eilute,\ namuDarbuKiekis);}
 \DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ studentuSarasas.push\_back(std::move(studentas));}
 \DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{catch}\ (...)\ \{}
 \DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
@@ -93,7 +93,7 @@
 \DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ RezultatoKonteineris\&\ silpniStudentai)\ \{}
 \DoxyCodeLine{00153\ \ \ \ \ silpniStudentai.clear();}
 \DoxyCodeLine{00154\ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keyword}{constexpr}\ (\textcolor{keyword}{requires}\ \{\ silpniStudentai.reserve(studentai.size()\ /\ 2);\ \})\ silpniStudentai.reserve(studentai.size()\ /\ 2);}
-\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::partition(studentai.begin(),\ studentai.end(),\ [](\textcolor{keyword}{const}\ Studentas\&\ studentas)\ \{\ return\ studentas.getFinalGrade()\ <\ 5.0;\ \});}
+\DoxyCodeLine{00155\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::partition(studentai.begin(),\ studentai.end(),\ [](\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_studentas}{Studentas}}\&\ studentas)\ \{\ return\ studentas.getFinalGrade()\ <\ 5.0;\ \});}
 \DoxyCodeLine{00156\ \ \ \ \ silpniStudentai.insert(silpniStudentai.end(),\ std::make\_move\_iterator(studentai.begin()),\ std::make\_move\_iterator(it));}
 \DoxyCodeLine{00157\ \ \ \ \ studentai.erase(studentai.begin(),\ it);}
 \DoxyCodeLine{00158\ \}}
@@ -102,7 +102,7 @@
 \DoxyCodeLine{00172\ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{_sablonines_funkcijos_8h_a7639f0e3fdc21481d3acd39d58285263}{skirstytiIstrinantStudentusEfektyviau}}(SaltinioKonteineris\&\ studentai,\ RezultatoKonteineris\&\ silpniStudentai)\ \{}
 \DoxyCodeLine{00173\ \ \ \ \ silpniStudentai.clear();}
 \DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keyword}{constexpr}\ (\textcolor{keyword}{requires}\ \{\ silpniStudentai.reserve(studentai.size()\ /\ 2);\ \})\ silpniStudentai.reserve(studentai.size()\ /\ 2);}
-\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::remove\_if(studentai.begin(),\ studentai.end(),\ [\&](\textcolor{keyword}{const}\ Studentas\&\ studentas)\ \{}
+\DoxyCodeLine{00175\ \ \ \ \ \textcolor{keyword}{auto}\ it\ =\ std::remove\_if(studentai.begin(),\ studentai.end(),\ [\&](\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_studentas}{Studentas}}\&\ studentas)\ \{}
 \DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ if\ (studentas.getFinalGrade()\ <\ 5.0)\ \{}
 \DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ silpniStudentai.push\_back(studentas);}
 \DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ return\ true;}

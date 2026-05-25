@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['irasytiduomenis_0',['irasytiDuomenis',['../struktura_darbas_su_failais_8h.html#a34dd856e15df627f61ab9819f703819e',1,'strukturaDarbasSuFailais.h']]],
-  ['irasytistudentuduomenisifaila_1',['irasytiStudentuDuomenisIFaila',['../struktura_darbas_su_failais_8h.html#a185551ed9b9296aece65dd5b1870f712',1,'irasytiStudentuDuomenisIFaila(const std::vector&lt; Studentas &gt; &amp;studentuSarasas, const std::string &amp;failoPavadinimas):&#160;strukturaDarbasSuFailais.h'],['../struktura_isvestis_8h.html#af44473ecb34d1a1ddf49f63183bd7f9b',1,'irasytiStudentuDuomenisIFaila(std::vector&lt; Studentas &gt; &amp;studentuSarasas, int maksimalusNDKiekis, int studentuKiekis, Failai &amp;failai):&#160;strukturaIsvestis.h']]],
-  ['irasytisuskirstytusstudentusifailus_2',['irasytiSuskirstytusStudentusIFailus',['../struktura_darbas_su_failais_8h.html#ab0f6aaabf3f1ac4568fa7f431471a849',1,'strukturaDarbasSuFailais.h']]],
-  ['ismatuotilaika_3',['ismatuotiLaika',['../struktura_testavimas_8h.html#a178be1b12367349c13d2a6d4828b1901',1,'strukturaTestavimas.h']]],
-  ['isvedimas_4',['isvedimas',['../struct_testo_laikai.html#a80d8b6d0e1d69415b89f8c2c00eb15db',1,'TestoLaikai']]],
-  ['isvedimo_5fi_5ffaila_5fmeniu_5',['ISVEDIMO_I_FAILA_MENIU',['../struktura_meniu_8h.html#ad27f43c4a852ce3e4a87d9e3768ce281',1,'strukturaMeniu.h']]],
-  ['isvedimo_5fmeniu_6',['ISVEDIMO_MENIU',['../struktura_meniu_8h.html#a0225452f31f3ea2fecde19cfe0133862',1,'strukturaMeniu.h']]],
-  ['isvestistudentus_7',['isvestiStudentus',['../struktura_isvestis_8h.html#a30e18828d2b52f3ea1d87720bb5ce675',1,'strukturaIsvestis.h']]]
+  ['gautinuskaitymomeniu_0',['gautiNuskaitymoMeniu',['../struktura_meniu_8h.html#a6bac752dc7b318625b17866072d7e66e',1,'strukturaMeniu.h']]],
+  ['gautitekstiniusfailus_1',['gautiTekstiniusFailus',['../struktura_darbas_su_failais_8h.html#a80f213b029d2d4979c729a8c0904ea9b',1,'strukturaDarbasSuFailais.h']]],
+  ['gautividurki_2',['gautiVidurki',['../struktura_testavimas_8h.html#a0bf767a4d1e73bc1d01550ba7a720ef6',1,'strukturaTestavimas.h']]],
+  ['generuotirezultatus_3',['generuotiRezultatus',['../struktura_generavimas_8h.html#a62d80453c2c99fb90f062f2f9620d3ea',1,'strukturaGeneravimas.h']]],
+  ['generuotistudentus_4',['generuotiStudentus',['../struktura_generavimas_8h.html#a8be82c61292e1f92fdce3941ede03067',1,'strukturaGeneravimas.h']]],
+  ['generuotisveikaskaiciu_5',['generuotiSveikaSkaiciu',['../struktura_generavimas_8h.html#af52281b7321f916c8d98d9e8bf4be804',1,'strukturaGeneravimas.h']]],
+  ['generuotivardapavarde_6',['generuotiVardaPavarde',['../struktura_generavimas_8h.html#a6b335af470d68f9e6634b8fc2e273a3f',1,'strukturaGeneravimas.h']]],
+  ['getexamgrade_7',['getExamGrade',['../class_studentas.html#a46a5ec0fe33ef04ea7918c999aa2ae11',1,'Studentas']]],
+  ['getfinalgrade_8',['getFinalGrade',['../class_studentas.html#aba83d97095d23a9781c84cb390f62cc1',1,'Studentas']]],
+  ['gethomeworkgrades_9',['getHomeworkGrades',['../class_studentas.html#acfef54ae695430c93281164e001e018c',1,'Studentas']]],
+  ['getname_10',['getName',['../class_zmogus.html#a1edd5080449d2b2ed385d7dc5292a8bd',1,'Zmogus::getName()'],['../class_studentas.html#aedbf85a5ca5b70585d32245bc3dcd1e6',1,'Studentas::getName()']]],
+  ['getsurname_11',['getSurname',['../class_zmogus.html#ad8e3cb14fe4df70965f52a8432aa9399',1,'Zmogus::getSurname()'],['../class_studentas.html#a7761e6d92ac02b72a008a73170ad340c',1,'Studentas::getSurname()']]]
 ];

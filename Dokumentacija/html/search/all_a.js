@@ -1,23 +1,9 @@
 var searchData=
 [
-  ['testolaikai_0',['TestoLaikai',['../struct_testo_laikai.html',1,'']]],
-  ['testuoticopykonstruktoriu_1',['testuotiCopyKonstruktoriu',['../struktura_testavimas_8h.html#a463809cbb7a5afcb3e47f4076e779749',1,'strukturaTestavimas.h']]],
-  ['testuoticopypriskyrimooperatoriu_2',['testuotiCopyPriskyrimoOperatoriu',['../struktura_testavimas_8h.html#a402fe31e2395c7f7b4126918f1ffd080',1,'strukturaTestavimas.h']]],
-  ['testuotidefaultkonstruktoriu_3',['testuotiDefaultKonstruktoriu',['../struktura_testavimas_8h.html#ad44e1a9928fe9fc331dd7827a101c801',1,'strukturaTestavimas.h']]],
-  ['testuotidestruktoriu_4',['testuotiDestruktoriu',['../struktura_testavimas_8h.html#a08dffffaa352966c123e41c1936e17d8',1,'strukturaTestavimas.h']]],
-  ['testuotigalutiniopazymioskaiciavimapagalvidurki_5',['testuotiGalutinioPazymioSkaiciavimaPagalVidurki',['../struktura_testavimas_8h.html#a068190c82482ff519cc6cdeeec2627ff',1,'strukturaTestavimas.h']]],
-  ['testuotiisvestiesoperatoriu_6',['testuotiIsvestiesOperatoriu',['../struktura_testavimas_8h.html#a4b98a6e38ef91a2f6c6e1be5fce71c85',1,'strukturaTestavimas.h']]],
-  ['testuotiivestiesoperatoriu_7',['testuotiIvestiesOperatoriu',['../struktura_testavimas_8h.html#a75793516cfba4ef17b097c18d582f789',1,'strukturaTestavimas.h']]],
-  ['testuotikonstruktoriuiseilutes_8',['testuotiKonstruktoriuIsEilutes',['../struktura_testavimas_8h.html#ad5f5b78ccdc58ab5b85eac70ec167cf8',1,'strukturaTestavimas.h']]],
-  ['testuotimovekonstruktoriu_9',['testuotiMoveKonstruktoriu',['../struktura_testavimas_8h.html#a402be6c9c0d86353356cb45593cee923',1,'strukturaTestavimas.h']]],
-  ['testuotimovepriskyrimooperatoriu_10',['testuotiMovePriskyrimoOperatoriu',['../struktura_testavimas_8h.html#af344a111527a6911bebeb98900e48e5e',1,'strukturaTestavimas.h']]],
-  ['testuotinamudarbupazymiuvaldyma_11',['testuotiNamuDarbuPazymiuValdyma',['../struktura_testavimas_8h.html#a4bb8c59e2f389d6c4219c1c2f60a965c',1,'strukturaTestavimas.h']]],
-  ['testuotiparametrinikonstruktoriu_12',['testuotiParametriniKonstruktoriu',['../struktura_testavimas_8h.html#a037828c5873838ec219f50aea7c2d7d8',1,'strukturaTestavimas.h']]],
-  ['testuotipaveldimumostruktura_13',['testuotiPaveldimumoStruktura',['../struktura_testavimas_8h.html#adef5020e20de9afda0858bbda08a3007',1,'strukturaTestavimas.h']]],
-  ['testuotiselfcopyassignment_14',['testuotiSelfCopyAssignment',['../struktura_testavimas_8h.html#a00853257801a5ffed6b1f00b55e477ff',1,'strukturaTestavimas.h']]],
-  ['testuotisetteriusirgetterius_15',['testuotiSetteriusIrGetterius',['../struktura_testavimas_8h.html#ac01825648a2e34d732afca2688e48051',1,'strukturaTestavimas.h']]],
-  ['testuotistudentaslenteleiisvestiesoperatoriu_16',['testuotiStudentasLenteleiIsvestiesOperatoriu',['../struktura_testavimas_8h.html#a7c1a9c04ee6b41de5ace3cf21ac473d3',1,'strukturaTestavimas.h']]],
-  ['tikrintiivesti_17',['tikrintiIvesti',['../struktura_ivestis_8h.html#a9d1096374764a3cae3f9cb9bc8e2b29e',1,'strukturaIvestis.h']]],
-  ['tvarkytipavarde_18',['tvarkytiPavarde',['../struktura_ivestis_8h.html#a14839bcd3461a6cc7f5e37f373ec2f8b',1,'strukturaIvestis.h']]],
-  ['tvarkytivarda_19',['tvarkytiVarda',['../struktura_ivestis_8h.html#ad0fe2a7434f8562364234172f6cd53f8',1,'strukturaIvestis.h']]]
+  ['reservehomeworkgrades_0',['reserveHomeworkGrades',['../class_studentas.html#ad6865102e796876d332b2be33be06acc',1,'Studentas']]],
+  ['rikiavimas_1',['rikiavimas',['../struct_testo_laikai.html#a9c44963f36fb065ec1713ca6972e4f2b',1,'TestoLaikai']]],
+  ['rikiavimo_5fmeniu_2',['RIKIAVIMO_MENIU',['../struktura_meniu_8h.html#a25e4d769771aa4ea4fa2574cc09be9ad',1,'strukturaMeniu.h']]],
+  ['rikiavimo_5fmeniu_5ftik_5fdidejanciai_3',['RIKIAVIMO_MENIU_TIK_DIDEJANCIAI',['../struktura_meniu_8h.html#ae819fe4461a65af611aa705f2cc0621c',1,'strukturaMeniu.h']]],
+  ['rikiuotistudentus_4',['rikiuotiStudentus',['../_sablonines_funkcijos_8h.html#a30e1e1532e5602fdf39c845ad8f26bf7',1,'rikiuotiStudentus(int pasirinkimasRikiavimo, StudentuKonteineris &amp;studentuSarasas):&#160;SabloninesFunkcijos.h'],['../struktura_rikiavimas_8h.html#a7626763ae6ff75b024db43dccfe3988d',1,'rikiuotiStudentus(int pasirinkimasRikiavimo, std::vector&lt; Studentas &gt; &amp;studentuSarasas):&#160;strukturaRikiavimas.h']]],
+  ['rikiuotisuskirstytusstudentus_5',['rikiuotiSuskirstytusStudentus',['../_sablonines_funkcijos_8h.html#a146fa3618b4949685aad13bec08d68a0',1,'rikiuotiSuskirstytusStudentus(StudentuKonteineris &amp;pazangiuSarasas, StudentuKonteineris &amp;silpnuSarasas, int pasirinkimasRikiavimoPazangiu, int pasirinkimasRikiavimoSilpnu):&#160;SabloninesFunkcijos.h'],['../struktura_rikiavimas_8h.html#aa9a17512520cfa7b6808214c3cfb9cd0',1,'rikiuotiSuskirstytusStudentus(std::vector&lt; Studentas &gt; &amp;pazangiuSarasas, std::vector&lt; Studentas &gt; &amp;silpnuSarasas, int pasirinkimasRikiavimoPazangiu, int pasirinkimasRikiavimoSilpnu):&#160;strukturaRikiavimas.h']]]
 ];
