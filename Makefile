@@ -1,21 +1,30 @@
-CXX := g++
+CXX      := g++
+STD      := -std=c++23
 
-STD := -std=c++23
-
-APP_WARNINGS := -Wall -Wextra -Wshadow -Wconversion -Wpedantic -Werror
+APP_WARNINGS  := -Wall -Wextra -Wshadow -Wconversion -Wpedantic -Werror
 TEST_WARNINGS := -Wall -Wextra -Wshadow -Wconversion -Wpedantic
 
 COMMON_INCLUDES := -I. -IstrukturosFailai
 
-APP_SOURCES := programaVektoriai.cpp pagalbinesFunkcijos/*.cpp Studentas.cpp
+SHARED_SOURCES := Studentas.cpp \
+	pagalbinesFunkcijos/Meniu.cpp \
+	pagalbinesFunkcijos/pagalbinesDarboSuFailaisFunkcijos.cpp \
+	pagalbinesFunkcijos/pagalbinesGeneravimoFunkcijos.cpp \
+	pagalbinesFunkcijos/pagalbinesIsvestiesFunkcijos.cpp \
+	pagalbinesFunkcijos/pagalbinesIvestiesFunkcijos.cpp \
+	pagalbinesFunkcijos/pagalbinesRikiavimoFunkcijos.cpp \
+	pagalbinesFunkcijos/pagalbinesSkaiciavimuFunkcijos.cpp \
+	pagalbinesFunkcijos/pagalbinesTestavimoFunkcijos.cpp
 
-TEST_SOURCES := pagalbinesFunkcijos/*.cpp Studentas.cpp
+APP_SOURCES  := programaVektoriai.cpp $(SHARED_SOURCES)
+TEST_SOURCES := $(SHARED_SOURCES) \
+	pagalbinesFunkcijos/GTestFunkcijos.cpp
 
-GTEST_REPO := https://github.com/google/googletest.git
-GTEST_ROOT := googletest
-GTEST_DIR := $(GTEST_ROOT)/googletest
-GTEST_INC := -I$(GTEST_DIR)/include -I$(GTEST_DIR)
-GTEST_SRC := $(GTEST_DIR)/src/gtest-all.cc
+GTEST_REPO     := https://github.com/google/googletest.git
+GTEST_ROOT     := googletest
+GTEST_DIR      := $(GTEST_ROOT)/googletest
+GTEST_INC      := -I$(GTEST_DIR)/include -I$(GTEST_DIR)
+GTEST_SRC      := $(GTEST_DIR)/src/gtest-all.cc
 GTEST_MAIN_SRC := $(GTEST_DIR)/src/gtest_main.cc
 
 TEST_TARGET := tests_runner

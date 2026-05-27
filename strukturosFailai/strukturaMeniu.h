@@ -18,7 +18,7 @@
 using MeniuEilute = std::string_view;
 
 /** @brief Pagrindinio programos meniu eilutės. */
-extern const std::array<MeniuEilute, 15> PAGRINDINIS_MENIU;
+extern const std::array<MeniuEilute, 14> PAGRINDINIS_MENIU;
 
 /** @brief Bendro rikiavimo meniu eilutės. */
 extern const std::array<MeniuEilute, 7> RIKIAVIMO_MENIU;
